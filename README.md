@@ -1,1 +1,6 @@
 # Bioinformatics_Project
+## Compression Algorithms based on BWT and Wavelet Tree for Large K-mers Storage Problem
+
+Calculating k-mers[1], a substring of length k in DNA sequence data, is an important part of many methods in bioinformatics. Although this rule is simple to understand, computing k-mers in large modern sequential data sets can easily exceed the storage capacity of standard computers. When k is large, the amount of storage is too large and thus calculation speed becomes slower because the value is too large.
+
+In our project, we first studied and applied the BWT transform algorithm and Huffman coding to pre-process k-mer data, and then implemented wavelet tree structure and statistically analyzed the distribution of continuous 0 or 1 vectors in wavelet tree nodes. We designed a suitable Hybrid coding storage structure, in which we applied direct coding, run length and Elias Gamma coding methods, and conducted experiments on different single coding methods regarding to compression rate. Furthermore, k-mers compression was realized by adopting the multi-threaded parallel thinking and compression algorithm principle, and also we adjusted parameters of our program through test data to achieve better compression performance.
